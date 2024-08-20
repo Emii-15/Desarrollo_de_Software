@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        
+                section {
+            margin-bottom: 20px;
+            border: 2px solid grey;
+            padding: 10px;
+        }
+        .volver-a-pagina-inicio{
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 18px;
+            color: rgb(255, 255, 255);
+            background-color:#0937ce;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .volver-a-pagina-inicio:hover{
+            background-color: #fffb00;
+            font-size:18px;
+            color: rgb(0,0,0)
+        }
+        header,
+        footer{
+            background-color: #0f6ae0;
+            color: rgb(246, 250, 7);
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>7. Formulario </h1>
+
+    </header>
+    <main> 
+    <section>
+        <form> 
+            <label for="nombre">Nombre: </label>
+                <input type="text" placeholder="Ej: Laura"/> 
+            <label for="email">-Email: </label>
+                <input type="email" placeholder="Ej: Laurita04@gmail.com"/>
+            <label for ="Mensaje">Mensaje: </label>
+                    <textarea placeholder="Mensaje..."> </textarea>
+                        <button type="submit"> Enviar</button> 
+        </form>
+        <h3> Volver a la página principal:</h3>
+        
+        
+        <input type="button" class="volver-a-pagina-inicio" value="Volver a Inicio" onclick="location.href='index.html'">
+            </article>
+        </section>
+        </main>
+            <footer>
+                <p>&copy; Emiliano Ledesma - UTN FRM -Desarrollo de Software - Trabajo Practico HTML </p>
+            </footer>
+        
+        
+</body>
+
+</html>
