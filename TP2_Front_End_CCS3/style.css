@@ -1,0 +1,447 @@
+
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(244,117, 33);
+    border-bottom: 2px solid rgb(244,117, 33);
+        background-image: url(cr3.png) ;
+        background-size: cover;
+        background-position:30% 20%;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-family: 'Maven Pro', sans-serif;
+        font-weight: bold;
+    
+}
+
+
+header h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #000000;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+}
+
+header blockquote {
+    font-size: 18px;
+    text-align: center;
+    text-transform: italic;
+    text-decoration: none;
+    color: #050303;
+    margin-top: 10px;
+    border-left: 5px solid #00000000;
+    padding-left: 10px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+}
+
+header button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color:#272727;
+    color: rgb(244,117, 33);
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+
+}
+
+p {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+}
+section {
+    margin: 20px;
+}
+
+section h2 {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+}
+section h3 {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin: 20px;
+    text-align:left;
+}
+body {
+    background-color: #272727;
+    
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(244,117, 33);
+    border-bottom: 2px solid rgb(244,117, 33);
+        background-image: url(cr3.png) ;
+        background-size: cover;
+        background-position:30% 20%;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-family: 'Maven Pro', sans-serif;
+        font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: #fafafa;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+    section h2 {
+        font-size: 14px;
+        color:rgb(244,117, 33);
+        margin-bottom: 10px;
+        text-align: center;
+        font-family: 'Maven Pro', sans-serif;
+        font-weight: bold;
+    }
+    section h3 {
+        font-size: 14px;
+        color: rgb(255, 255, 255);
+        margin-bottom: 10px;
+        margin: 20px;
+        text-align:left;
+    }
+    
+    section {
+        width: 90%;
+        padding: 10px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+.propiedades-de-texto p {
+    font-size: 18px;
+    text-align: left;
+    text-transform:capitalize;
+    text-decoration: underline;
+    color: rgb(244,117, 33);
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+}
+
+.propiedades-de-texto blockquote {
+    font-size: 16px;
+    text-align: left;
+    text-transform: italic;
+    background-color:  #f4752118;
+    text-decoration: none;
+    color:  #f47521;
+    margin-top: 10px;
+    border-left: 5px solid #f47521;
+    padding-left: 10px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+}
+
+
+
+.miBoton {
+
+    display: inline-block;
+    padding: 10px 15px;
+    background-color:#272727;
+    color: rgb(244,117, 33);
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 10px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+}
+
+.miBoton:hover {
+
+    background-color: #3d3d3d;
+}
+.horizontal-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+.lista-anime {
+    font-size: 20px; 
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    text-align: left;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+}
+.horizontal-table td {
+    width: 50%;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+/* Me ayude de Mistral para hacer esto, espero que este bien estructurada la sidebar */ 
+.sidebar {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    background-color: #383737;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar h2 {
+    color: rgb(244,117, 33);
+    text-align: center;
+}
+
+.sidebar p {
+    color: #ffffff;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff6347;
+    color: #2b2b2b;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.close-btn:hover {
+
+    background-color:rgb(250, 250, 250);
+}
+
+.sidebar-link {
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    background-color: #272727;
+    margin: 10px 0;
+    border-radius: 25px;
+}
+
+.sidebar-link:hover {
+    background-color: rgb(244,117, 33);
+}
+
+.sidebar-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.decorative-line {
+    height: 3px;
+    background-color: #525252;
+    margin-bottom: 20px;
+}
+.box {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid  rgb(244,117, 33) ;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.);
+    background-color: #181818;
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+.box1 {
+    border: 1px solid black;
+    background-color: rgb(244,117, 33);
+    box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.6);
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+
+}
+
+.box2 {
+    border: 4px solid rgb(244,117, 33);
+    background-color: #383737;
+    box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.6);;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+
+}
+.box3 {
+    border: 4px solid #000000;
+    background-color: rgb(244,117, 33);
+    box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.6);;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+    text-align: center;
+
+}
+.box4 {
+    border: 4px solid rgb(244,117, 33);
+    background-color: #383737;
+    box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.6);;
+    display: flex;
+    align-items: center;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+
+}
+
+.box4-image {
+    position:static;
+    display: flex;
+    border:3px solid rgba(110, 110, 110, 0.486);
+    border-radius: 5%;
+    left: 0;
+    top: 0;
+    width: 40%;
+    height: 40%;
+    margin-right: 20px;
+}
+
+.box4-text {
+    flex: 1;
+    text-align:start;
+}
+
+.relativo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(244,117, 33);
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.absoluto {
+    position: absolute;
+    top: 65px;
+    left: 820px;
+    height: 50%;
+    border-radius: 20px;
+    background-color:  #383737;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.gif-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+
+.gif-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.image-link {
+    display: inline-block;;
+    text-decoration: none;
+
+}
+.image-link img {
+    width: auto;
+    height: auto;
+}
+.gif-link img {
+    width: auto;
+    height: auto;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color:  rgb(244,117, 33);
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #4d4d4d;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.animaciones {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.animacion {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(244,117, 33);
+    color: #050505;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s ease;
+}
+
+.animacion:hover {
+    background-color: #fdfdfd;
+}
+
+.mover {
+    width: 100px;
+    height: 100px;
+    background-color: #ff6347;
+    border-radius: 100%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: mover 10s infinite;
+}
+
+
+@keyframes mover {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(450px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.sticker-container {
+    position: relative;
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+
+.sticker {
+    position: relative;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
